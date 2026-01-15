@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Empleado extends Personas {
+abstract class Empleado extends Personas {
     private double salarioBase;
     private int antiguedadAnios;
 
