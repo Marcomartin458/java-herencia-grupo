@@ -1,6 +1,3 @@
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 abstract class Empleado extends Personas {
     private double salarioBase;
     private int antiguedadAnios;
