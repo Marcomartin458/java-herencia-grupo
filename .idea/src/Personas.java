@@ -1,4 +1,4 @@
-public class Personas {
+public abstract class Personas {
     private String dni;
     private String nombre;
     private int edad;
@@ -24,7 +24,8 @@ public class Personas {
         return edad;
     }
 
-    public void presentarse() {
-        System.out.println("Hola, soy " + this.nombre + ", mi dni es: " + this.dni + " y mi edad es: " + this.edad);
+    @Override
+    public String toString() {
+        return String.format("Mi nombre es: %s, mi edad es: %d y mi deni es: %s", nombre, edad, dni);
     }
 }
