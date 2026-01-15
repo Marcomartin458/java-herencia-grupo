@@ -3,7 +3,7 @@ abstract class Empleado extends Personas {
     private int antiguedadAnios;
 
     public Empleado(String nombre, String dni, int edad) {
-        super(nombre, dni, edad);
+        super.nombre, dni, edad;
 
     }
 
