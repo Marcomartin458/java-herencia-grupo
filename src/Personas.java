@@ -1,7 +1,7 @@
 public class Personas {
     private String dni;
-    private String nombre;
-    private int edad;
+    protected String nombre;
+    protected int edad;
 
     public Personas() {
     }
