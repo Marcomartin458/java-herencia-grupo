@@ -1,7 +1,6 @@
 public class Empleados extends Personas {
-    private double salarioBase;
-    private int antiguedadAnios;
-
+    protected double salarioBase;
+    protected int antiguedadAnios;
 
 
     public Empleados(String dni, String nombre, int edad, double salarioBase, int antiguedadAnios) {
@@ -9,6 +8,7 @@ public class Empleados extends Personas {
         this.salarioBase = salarioBase;
         this.antiguedadAnios = antiguedadAnios;
     }
+
 
     public double getSalarioBase() {
         return salarioBase;
@@ -25,6 +25,12 @@ public class Empleados extends Personas {
     public void setAntiguedadAnios(int antiguedadAnios) {
         this.antiguedadAnios = antiguedadAnios;
     }
+
+    public double calcularSalario(double salarioBase, int antiguedadAnios) {
+
+        return salarioBase*antiguedadAnios;
+    }
+
 
     @Override
     public String toString() {
