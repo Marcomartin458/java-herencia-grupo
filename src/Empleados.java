@@ -34,6 +34,6 @@ public class Empleados extends Personas {
 
     @Override
     public String toString() {
-        return String.format("Empleado: %s, %s, %d, %.2f, %d", super.getNombre(), super.getDni(), super.getEdad(), this.salarioBase, this.antiguedadAnios);
+        return String.format("Empleado:%n Nombre: %s, DNI: %s, Edad: %d, Salario base: %.2f, Años de antiguedad: %d", super.getNombre(), super.getDni(), super.getEdad(), this.salarioBase, this.antiguedadAnios);
     }
 }
