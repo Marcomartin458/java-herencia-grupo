@@ -1,0 +1,27 @@
+public class Desarrollador extends Empleados {
+    private String lenguajePrincipal;
+
+    public Desarrollador(String dni, String nombre, int edad, double salarioBase, int antiguedadAnios, String lenguajePrincipal) {
+        super(dni, nombre, edad, salarioBase, antiguedadAnios);
+        this.lenguajePrincipal = lenguajePrincipal;
+    }
+
+    public String getLenguajePrincipal() {
+        return lenguajePrincipal;
+    }
+
+    public void setLenguajePrincipal(String lenguajePrincipal) {
+        this.lenguajePrincipal = lenguajePrincipal;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Desarrollador: %nDNI: %s Nombre: %s Edad: %d Salario base: %.2f Años de antiguedad: %d Lenguaje principal: %s", super.getDni(), super.getNombre(), super.getEdad(),
+                super.getSalarioBase(), super.getAntiguedadAnios(), this.lenguajePrincipal);
+    }
+
+    @Override
+    public double calcularSalario(double salarioBase, int antiguedadAnios) {
+        return super.calcularSalario(salarioBase, antiguedadAnios);
+    }
+}
