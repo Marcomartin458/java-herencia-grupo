@@ -1,3 +1,5 @@
+package clases;
+
 public class Desarrollador extends Empleados {
     private String lenguajePrincipal;
 
@@ -16,7 +18,7 @@ public class Desarrollador extends Empleados {
 
     @Override
     public String toString() {
-        return String.format("Desarrollador: %nDNI: %s Nombre: %s Edad: %d Salario base: %.2f Años de antiguedad: %d Lenguaje principal: %s", super.getDni(), super.getNombre(), super.getEdad(),
+        return String.format("clases.Desarrollador: %nDNI: %s Nombre: %s Edad: %d Salario base: %.2f Años de antiguedad: %d Lenguaje principal: %s", super.getDni(), super.getNombre(), super.getEdad(),
                 super.getSalarioBase(), super.getAntiguedadAnios(), this.lenguajePrincipal);
     }
 

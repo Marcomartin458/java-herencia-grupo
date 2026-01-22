@@ -1,3 +1,5 @@
+package clases;
+
 public class Personas {
     private String dni;
     protected String nombre;

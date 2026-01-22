@@ -1,3 +1,5 @@
+package clases;
+
 public class Manager extends Empleados{
     protected int personasACargo;
 
@@ -16,7 +18,7 @@ public class Manager extends Empleados{
 
     @Override
     public String toString() {
-        return String.format("Manager: %nDNI: %s Nombre: %s Edad: %d Salario base: %.2f Años de antiguedad: %d Personas a cargo: %d", super.getDni(), super.getNombre(), super.getEdad(),
+        return String.format("clases.Manager: %nDNI: %s Nombre: %s Edad: %d Salario base: %.2f Años de antiguedad: %d clases.Personas a cargo: %d", super.getDni(), super.getNombre(), super.getEdad(),
                 super.getSalarioBase(), super.getAntiguedadAnios(), this.personasACargo);
     }
 

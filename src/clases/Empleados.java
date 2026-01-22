@@ -1,3 +1,5 @@
+package clases;
+
 public class Empleados extends Personas {
     protected double salarioBase;
     protected int antiguedadAnios;
