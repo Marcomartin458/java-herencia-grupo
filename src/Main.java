@@ -10,11 +10,6 @@ public class Main {
     }
 
     public static void informacionPersonas() {
-
-        personas.add(new Desarrollador("23454547H", "Juan", 25, 15000, 4, "Java"));
-        personas.add(new Manager("5678945H", "Manuel", 31, 20000, 17, 35));
-        personas.add(new Empleados("5678909H", "Aitor", 26, 12000, 3));
-
         if (!personas.isEmpty()) {
             for (Personas persona : personas) {
                 if (persona instanceof Empleados e) {

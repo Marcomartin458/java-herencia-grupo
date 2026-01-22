@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter;
 public class Personas {
     private String dni;
     protected String nombre;
-    protected int edad;
+    protected int edad=calcularEdad(getFechaNacimiento());
     private LocalDate fechaNacimiento;
     private String email;
     private String telefono;
@@ -21,14 +21,14 @@ public class Personas {
         this.email = email;
         this.telefono = telefono;
     }
-    public static int calcularEdad(LocalDate fechaNacimiento) {
+    public int calcularEdad(LocalDate fechaNacimiento) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy");
         String fechaNacimientoFormateada = formatter.format(fechaNacimiento);
         String fechaActual = formatter.format(LocalDate.now());
         int fechaActualInt = Integer.parseInt(fechaActual);
         int fechaNacimientoInt = Integer.parseInt(fechaNacimientoFormateada);
 
-        return  fechaActualInt - fechaNacimientoInt;
+        return this.edad= fechaActualInt - fechaNacimientoInt;
     }
 
     public String getDni() {
@@ -81,9 +81,7 @@ public class Personas {
 
     @Override
     public String toString() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yy");
-        String fecha_formateada = fechaNacimiento.format(formatter);
-        return String.format("Mi nombre es: %s, mi edad es: %d y mi dni es: %s. Nací en. %s", nombre, edad, dni, fecha_formateada);
+        return String.format("Mi nombre es: %s, mi edad es: %d y mi dni es: %s.", nombre, edad, dni);
     }
 }
 

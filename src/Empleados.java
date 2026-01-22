@@ -1,14 +1,15 @@
+import java.time.LocalDate;
+
 public class Empleados extends Personas {
     protected double salarioBase;
     protected int antiguedadAnios;
 
 
-    public Empleados(String dni, String nombre, int edad, double salarioBase, int antiguedadAnios) {
-        super(dni, nombre, edad);
+    public Empleados(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios) {
+        super(dni, nombre, edad, fechaNacimiento, email, telefono);
         this.salarioBase = salarioBase;
         this.antiguedadAnios = antiguedadAnios;
     }
-
 
     public double getSalarioBase() {
         return salarioBase;
