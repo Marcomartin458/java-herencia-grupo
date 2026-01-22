@@ -1,14 +1,14 @@
 public class Empleados extends Personas {
     protected double salarioBase;
     protected int antiguedadAnios;
+    protected String idEmpleado;
 
-
-    public Empleados(String dni, String nombre, int edad, double salarioBase, int antiguedadAnios) {
+    public Empleados(String dni, String nombre, int edad, double salarioBase, int antiguedadAnios, String idEmpleado) {
         super(dni, nombre, edad);
         this.salarioBase = salarioBase;
         this.antiguedadAnios = antiguedadAnios;
+        this.idEmpleado = idEmpleado;
     }
-
 
     public double getSalarioBase() {
         return salarioBase;
@@ -26,6 +26,14 @@ public class Empleados extends Personas {
         this.antiguedadAnios = antiguedadAnios;
     }
 
+    public String getIdEmpleado() {
+        return idEmpleado;
+    }
+
+    public void setIdEmpleado(String idEmpleado) {
+        this.idEmpleado = idEmpleado;
+    }
+
     public double calcularSalario(double salarioBase, int antiguedadAnios) {
 
         return salarioBase*antiguedadAnios;
@@ -34,6 +42,6 @@ public class Empleados extends Personas {
 
     @Override
     public String toString() {
-        return String.format("Empleado:%n Nombre: %s, DNI: %s, Edad: %d, Salario base: %.2f, Años de antiguedad: %d", super.getNombre(), super.getDni(), super.getEdad(), this.salarioBase, this.antiguedadAnios);
+        return String.format("Empleado: %s%n Nombre: %s, DNI: %s, Edad: %d, Salario base: %.2f, Años de antiguedad: %d", getIdEmpleado(), super.getNombre(), super.getDni(), super.getEdad(), this.salarioBase, this.antiguedadAnios);
     }
 }
