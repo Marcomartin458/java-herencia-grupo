@@ -1,3 +1,5 @@
+package clases;
+
 import java.time.LocalDate;
 
 public class Fichaje  extends Empleados{

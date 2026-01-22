@@ -1,9 +1,13 @@
+package clases;
+
 import java.time.LocalDate;
 
 public class Empleados extends Personas {
     protected double salarioBase;
     protected int antiguedadAnios;
     protected String idEmpleado;
+
+
 
     public Empleados(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado) {
         super(dni, nombre, edad, fechaNacimiento, email, telefono);
