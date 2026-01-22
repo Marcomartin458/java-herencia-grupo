@@ -17,9 +17,10 @@ public class Main {
 
         if (!personas.isEmpty()) {
             for (Personas persona : personas) {
-                Empleados e = (Empleados) persona;
-                double salario = e.calcularSalario(((Empleados) persona).getSalarioBase(), ((Empleados) persona).getAntiguedadAnios());
-                System.out.println(persona + " y el salario total percibido es: " + salario);
+                if (persona instanceof Empleados e) {
+                    double salario = e.calcularSalario(e.getSalarioBase(), e.getAntiguedadAnios());
+                    System.out.println(persona + " y el salario total percibido es: " + salario);
+                }
             }
         } else {
             System.out.println("No hay personas");
