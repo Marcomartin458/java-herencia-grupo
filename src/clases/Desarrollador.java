@@ -1,10 +1,12 @@
+package clases;
+
 import java.time.LocalDate;
 
 public class Desarrollador extends Empleados {
     private String lenguajePrincipal;
 
-    public Desarrollador(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String lenguajePrincipal) {
-        super(dni, nombre, edad, fechaNacimiento, email, telefono, salarioBase, antiguedadAnios);
+    public Desarrollador(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, String lenguajePrincipal) {
+        super(dni, nombre, edad, fechaNacimiento, email, telefono, salarioBase, antiguedadAnios, idEmpleado);
         this.lenguajePrincipal = lenguajePrincipal;
     }
 
