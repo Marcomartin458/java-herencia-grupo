@@ -1,9 +1,8 @@
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class GestorFichaje {
-    private Map<String, Fichaje> fichajes;
-
     public static void registrarEntrada() {
 
     }
