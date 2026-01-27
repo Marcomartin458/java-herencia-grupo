@@ -3,7 +3,7 @@ package clases;
 import java.util.ArrayList;
 
 public class Main {
-    private static ArrayList<Personas> personas = new ArrayList<>();
+    private static ArrayList<Persona> personas = new ArrayList<>();
 
 
     public static void main(String[] args) {
@@ -13,8 +13,8 @@ public class Main {
 
     public static void informacionPersonas() {
         if (!personas.isEmpty()) {
-            for (Personas persona : personas) {
-                if (persona instanceof Empleados e) {
+            for (Persona persona : personas) {
+                if (persona instanceof Empleado e) {
                     double salario = e.calcularSalario(e.getSalarioBase(), e.getAntiguedadAnios());
                     System.out.println(persona + " y el salario total percibido es: " + salario);
                 }

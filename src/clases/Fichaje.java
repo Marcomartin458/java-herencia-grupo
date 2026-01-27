@@ -2,7 +2,7 @@ package clases;
 
 import java.time.LocalDate;
 
-public class Fichaje  extends Empleados{
+public class Fichaje  extends Empleado {
     private String idFichaje;
     private LocalDate fechaHoraEntrada;
     private LocalDate fechaHoraSalida;
@@ -53,7 +53,7 @@ public class Fichaje  extends Empleados{
         if (this == obj ) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
 
-        Empleados empleado = (Empleados) obj;
+        Empleado empleado = (Empleado) obj;
 
         return this.idEmpleado != null ? this.idEmpleado.equals(empleado.getIdEmpleado()) : empleado.getIdEmpleado() == null;
     }

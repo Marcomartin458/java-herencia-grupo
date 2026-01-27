@@ -3,7 +3,7 @@ package clases;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class Personas {
+public class Persona {
     private String dni;
     protected String nombre;
     protected int edad=calcularEdad(getFechaNacimiento());
@@ -12,10 +12,10 @@ public class Personas {
     private String telefono;
 
 
-    public Personas() {
+    public Persona() {
     }
 
-    public Personas(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono) {
+    public Persona(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono) {
         this.dni = dni;
         this.nombre = nombre;
         this.edad = edad;

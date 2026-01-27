@@ -2,7 +2,7 @@ package clases;
 
 import java.time.LocalDate;
 
-public class Desarrollador extends Empleados {
+public class Desarrollador extends Empleado {
     private String lenguajePrincipal;
 
     public Desarrollador(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, String lenguajePrincipal) {
