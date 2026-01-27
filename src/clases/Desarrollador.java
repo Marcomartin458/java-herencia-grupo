@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class Desarrollador extends Empleado {
     private String lenguajePrincipal;
 
-    public Desarrollador(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, String lenguajePrincipal) {
-        super(dni, nombre, edad, fechaNacimiento, email, telefono, salarioBase, antiguedadAnios, idEmpleado);
+    public Desarrollador(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, LocalDate fechaContratacion, String departamento, double jornadaHoraria, boolean activo, String lenguajePrincipal) {
+        super(dni, nombre, edad, fechaNacimiento, email, telefono, salarioBase, antiguedadAnios, idEmpleado, fechaContratacion, departamento, jornadaHoraria, activo);
         this.lenguajePrincipal = lenguajePrincipal;
     }
 

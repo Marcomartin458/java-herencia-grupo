@@ -8,8 +8,8 @@ public class Fichaje  extends Empleado {
     private LocalDate fechaHoraSalida;
     private String tipo;
 
-    public Fichaje(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, String idFichaje, LocalDate fechaHoraEntrada, LocalDate fechaHoraSalida, String tipo) {
-        super(dni, nombre, edad, fechaNacimiento, email, telefono, salarioBase, antiguedadAnios, idEmpleado);
+    public Fichaje(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, LocalDate fechaContratacion, String departamento, double jornadaHoraria, boolean activo, String idFichaje, LocalDate fechaHoraEntrada, LocalDate fechaHoraSalida, String tipo) {
+        super(dni, nombre, edad, fechaNacimiento, email, telefono, salarioBase, antiguedadAnios, idEmpleado, fechaContratacion, departamento, jornadaHoraria, activo);
         this.idFichaje = idFichaje;
         this.fechaHoraEntrada = fechaHoraEntrada;
         this.fechaHoraSalida = fechaHoraSalida;
