@@ -1,19 +1,20 @@
 package clases;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Fichaje  extends Empleado {
     private String idFichaje;
-    private LocalDate fechaHoraEntrada;
-    private LocalDate fechaHoraSalida;
+    private LocalDateTime fechaHoraEntrada;
+    private LocalDateTime fechaHoraSalida;
     private String tipo;
 
-    public Fichaje(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, String idFichaje, LocalDate fechaHoraEntrada, LocalDate fechaHoraSalida, String tipo) {
+    public Fichaje(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, LocalDateTime fechaHoraEntrada, String tipo, LocalDateTime fechaHoraSalida, String idFichaje) {
         super(dni, nombre, edad, fechaNacimiento, email, telefono, salarioBase, antiguedadAnios, idEmpleado);
-        this.idFichaje = idFichaje;
         this.fechaHoraEntrada = fechaHoraEntrada;
-        this.fechaHoraSalida = fechaHoraSalida;
         this.tipo = tipo;
+        this.fechaHoraSalida = fechaHoraSalida;
+        this.idFichaje = idFichaje;
     }
 
     public String getIdFichaje() {
@@ -24,19 +25,19 @@ public class Fichaje  extends Empleado {
         this.idFichaje = idFichaje;
     }
 
-    public LocalDate getFechaHoraEntrada() {
+    public LocalDateTime getFechaHoraEntrada() {
         return fechaHoraEntrada;
     }
 
-    public void setFechaHoraEntrada(LocalDate fechaHoraEntrada) {
+    public void setFechaHoraEntrada(LocalDateTime fechaHoraEntrada) {
         this.fechaHoraEntrada = fechaHoraEntrada;
     }
 
-    public LocalDate getFechaHoraSalida() {
+    public LocalDateTime getFechaHoraSalida() {
         return fechaHoraSalida;
     }
 
-    public void setFechaHoraSalida(LocalDate fechaHoraSalida) {
+    public void setFechaHoraSalida(LocalDateTime fechaHoraSalida) {
         this.fechaHoraSalida = fechaHoraSalida;
     }
 

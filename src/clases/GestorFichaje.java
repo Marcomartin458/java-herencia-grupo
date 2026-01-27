@@ -1,27 +1,34 @@
 package clases;
 
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class GestorFichaje {
-    public static void registrarEntrada() {
+    private static Map<Empleado, Fichaje> fichajes = new LinkedHashMap();
+    private static Fichaje fichaje;
+
+    public static void registrarEntrada(Empleado empleado) {
+        LocalDateTime fechaHoraEntrada = LocalDateTime.now();
+        fichaje.setFechaHoraEntrada(fechaHoraEntrada);
+        fichajes.put(empleado, );
+    }
+
+    public static void registrarSalida(Empleado empleado) {
 
     }
 
-    public static void registrarSalida() {
+    public static void obtenerFichajesDIa(Empleado empleado) {
 
     }
 
-    public static void obtenerFichajesDIa() {
+    public static void calcularHorasMenssuales(Empleado empleado) {
 
     }
 
-    public static void calcularHorasMenssuales() {
-
-    }
-
-    public static void generarReporteAsistencia() {
+    public static void generarReporteAsistencia(Empleado empleado) {
 
     }
 }
