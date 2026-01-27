@@ -2,7 +2,7 @@ package clases;
 
 import java.time.LocalDate;
 
-public class Manager extends Empleados{
+public class Manager extends Empleado {
     protected int personasACargo;
 
     public Manager(String dni, String nombre, int edad, LocalDate fechaNacimiento, String email, String telefono, double salarioBase, int antiguedadAnios, String idEmpleado, int personasACargo) {
