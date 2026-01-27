@@ -81,6 +81,7 @@ public class Persona {
         this.telefono = telefono;
     }
 
+//Metodo presentarse añadido como metodo toString.
     @Override
     public String toString() {
         return String.format("Mi nombre es: %s, mi edad es: %d y mi dni es: %s.", nombre, edad, dni);
