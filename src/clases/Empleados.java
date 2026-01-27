@@ -45,7 +45,6 @@ public class Empleados extends Personas {
         return salarioBase*antiguedadAnios;
     }
 
-
     @Override
     public String toString() {
         return String.format("Empleado: %s%n Nombre: %s, DNI: %s, Edad: %d, Salario base: %.2f, Años de antiguedad: %d", getIdEmpleado(), super.getNombre(), super.getDni(), super.getEdad(), this.salarioBase, this.antiguedadAnios);
